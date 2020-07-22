@@ -1,0 +1,71 @@
+\documentclass[10pt,table]{beamer}
+
+\usetheme{metropolis}
+
+\metroset{progressbar=foot}
+\metroset{titleformat=allsmallcaps}
+\metroset{numbering=counter}
+
+\graphicspath{{./img/}}
+\titlegraphic{\vspace{60mm}\hfill\includegraphics[height=2cm]{logoUPV.pdf}}
+
+\title{Minimal model for protein expression accounting for metabolic burden}
+\subtitle{Automatización Industrial}
+\author{Fernando Nóbel (\texttt{fersann1@upv.es})}
+\date{Marzo 10, 2020}
+\institute{Universitat Polit\`ecnica de Val\`encia}
+
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode} % Matlab code highlight
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+%% the following commands are needed for some matlab2tikz features
+\usetikzlibrary{plotmarks}
+\usetikzlibrary{arrows.meta}
+\usepgfplotslibrary{patchplots}
+\usepackage{grffile}
+\usepackage{amsmath}
+\usepackage{tcolorbox}
+
+\begin{document}
+
+
+\maketitle
+
+\begin{frame}{Table of contents}
+  \setbeamertemplate{section in toc}[sections numbered]
+  \tableofcontents[hideallsubsections]
+\end{frame}
+
+\section{Introducción}
+
+\begin{frame}{Introducción}
+
+  \begin{columns}[T,onlytextwidth]
+    \column{0.49\textwidth}
+    \metroset{block=fill}
+    \begin{exampleblock}{Prácticas 1 y 2}
+      \begin{enumerate}
+        \item Diseño con Red de Petri.
+        \item Uso de botonera para simular entradas.
+      \end{enumerate}
+    \end{exampleblock}
+
+    \column{0.49\textwidth}
+    \metroset{block=fill}
+    \begin{alertblock}{Prácticas 3 y 4}
+      \begin{enumerate}
+        \item Diseño con GRAFCET.
+        \item Uso del panel de cilindros neumáticos.
+      \end{enumerate}
+    \end{alertblock}
+
+  \end{columns}
+\end{frame}
+\metroset{progressbar=none}
+
+\begin{frame}[standout]
+  ¿Preguntas?
+\end{frame}
+
+\end{document}

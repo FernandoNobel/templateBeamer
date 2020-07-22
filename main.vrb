@@ -1,0 +1,7 @@
+\frametitle{Automatiza el análisis de contractividad}
+\begin{enumerate}
+    \item Hacer un GUI.
+    \item Integrar completamente esta clase con el código de Jose Luis.
+    \item Mejorar el solver del DAE (sólo resuelve DAEs del índice 1).
+    \item Terminar de implementar el modelo multiescala.
+  \end{enumerate}

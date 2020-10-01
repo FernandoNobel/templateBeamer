@@ -1,34 +1,30 @@
-\documentclass[10pt,table]{beamer}
+\documentclass[9pt,table,aspectratio=169]{beamer}
 
 \usetheme{metropolis}
 
-\metroset{progressbar=foot}
-\metroset{titleformat=allsmallcaps}
-\metroset{numbering=counter}
-
 \graphicspath{{./img/}}
-\titlegraphic{\vspace{60mm}\hfill\includegraphics[height=2cm]{logoUPV.pdf}}
+\titlegraphic{\vspace{65mm}\hfill \includegraphics[height=0.8cm]{img/logos/ai2.png} \quad \includegraphics[height=0.8cm]{img/logos/marca_UPV_principal_color300.png}}
 
-\title{Minimal model for protein expression accounting for metabolic burden}
-\subtitle{Automatización Industrial}
-\author{Fernando Nóbel (\texttt{fersann1@upv.es})}
-\date{Marzo 10, 2020}
-\institute{Universitat Polit\`ecnica de Val\`encia}
+\title{Sistemas automáticos - Práctica 1}
+\subtitle{Simulación de sistemas dinámicos con MATLAB}
+\author{Fernando Nóbel Santos Navarro (\textit{fersann1@upv.es})}
+
+\date{Octubre 16, 2020}
+\institute{Grado en Ingeniería en Tecnologías Industriales 2020-2021}
 
 \usepackage[framed,numbered,autolinebreaks,useliterate]{mcode} % Matlab code highlight
 
-\usepackage{pgfplots}
-\pgfplotsset{compat=newest}
-%% the following commands are needed for some matlab2tikz features
-\usetikzlibrary{plotmarks}
-\usetikzlibrary{arrows.meta}
-\usepgfplotslibrary{patchplots}
-\usepackage{grffile}
-\usepackage{amsmath}
-\usepackage{tcolorbox}
+\usepackage{booktabs}
+
+\setlength{\defaultaddspace}{1.5pt}
+\setlength{\tabcolsep}{5pt}
+\usepackage{tabularx}
+\newcolumntype{P}{>{\raggedright\arraybackslash}m}
+\newcolumntype{C}{>{\centering\arraybackslash}m}
+
+\usepackage{multirow} % \multirow macro
 
 \begin{document}
-
 
 \maketitle
 
@@ -62,10 +58,18 @@
 
   \end{columns}
 \end{frame}
-\metroset{progressbar=none}
 
+\metroset{progressbar=none}
 \begin{frame}[standout]
+  \vfill
+  \vfill
+  \vfill
+  \huge
   ¿Preguntas?
+  \vfill
+  \vfill
+  \normalsize
+  \textnormal{fersann1@upv.es}
 \end{frame}
 
 \end{document}
